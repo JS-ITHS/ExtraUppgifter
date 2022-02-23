@@ -23,12 +23,17 @@ Verify Search Completed
     Wait Until Page Contains  ${SEARCH_TERM}
 Purchase Product
     Click Link  link:Köp
-    Reload Page
     Sleep  2s
+    Reload Page
 Verify Purchase Completed
     Wait Until Page Contains Element  //*[@id="rise-header"]/div[1]/div/div[5]/div/a/span[1]
     ${element_text}  Get Text  //*[@id="rise-header"]/div[1]/div/div[5]/div/a/span[1]
     ${actual_amount}  convert into number  ${element_text}
     Should Be True  ${actual_amount} > 0
+Go To Cart
+    Click Element  //*[@id="rise-header"]/div[1]/div/div[5]/div/a
+    Verify Search Completed
+Verify Added To Cart
+    Page Should Contain  Age of Empires IV (code-in-a-box)
 End Web Test
     Close Browser

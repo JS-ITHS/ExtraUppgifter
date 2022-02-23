@@ -27,6 +27,8 @@ User Can Add Object To Cart and Verify Product Added To Cart
     Search For Product
     Purchase Product
     Verify Purchase Completed
+    Go To Cart
+    Verify Added To Cart
 
 
 
