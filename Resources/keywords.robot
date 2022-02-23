@@ -12,15 +12,18 @@ Verify Page Loaded
 Maximize Page
     Maximize Browser Window
 Search For Product
-    Enter Search Term
+    [Arguments]  ${search_term}  ${search_result}
+    Enter Search Term  ${search_term}
     Submit Search
-    Verify Search Completed
+    Verify Search Completed  ${search_result}
 Enter Search Term
-    Input Text  //*[@id="search-autocomplete"]/form/input[1]  ${SEARCH_TERM}
+    [Arguments]  ${search_term}
+    Input Text  //*[@id="search-autocomplete"]/form/input[1]  ${search_term}
 Submit Search
     Press Keys  //*[@id="search-autocomplete"]/form/input[1]  RETURN
 Verify Search Completed
-    Wait Until Page Contains  ${SEARCH_TERM}
+    [Arguments]  ${search_result}
+    Wait Until Page Contains  ${search_result}
 Purchase Product
     Click Link  link:Köp
     Sleep  2s
@@ -32,7 +35,7 @@ Verify Purchase Completed
     Should Be True  ${actual_amount} > 0
 Go To Cart
     Click Element  //*[@id="rise-header"]/div[1]/div/div[5]/div/a
-    Verify Search Completed
+    Verify Search Completed  ${SEARCH_TERM}
 Verify Added To Cart
     Page Should Contain  Age of Empires IV (code-in-a-box)
 End Web Test

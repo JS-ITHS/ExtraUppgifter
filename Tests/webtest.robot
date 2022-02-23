@@ -16,19 +16,26 @@ User Can Add Object To Cart
     [Documentation]  Trying to access website, search for a product and add to cart.
     [Tags]  Test 1 - ExtraUppgift 1 First Test
     Go To Web Page
-    Search For Product
+    Search For Product  Age of Empires IV (code-in-a-box)  Age of Empires IV (code-in-a-box)
     Purchase Product
     Verify Purchase Completed
 
 User Can Add Object To Cart and Verify Product Added To Cart
     [Documentation]  Trying to access website, search for a product, add to cart and verify added to cart.
-    [Tags]  Test 2 - ExtraUppgift 2 Second Test
+    [Tags]  Test 2 - ExtraUppgift 1 Second Test
     Go To Web Page
-    Search For Product
+    Search For Product  Age of Empires IV (code-in-a-box)  Age of Empires IV (code-in-a-box)
     Purchase Product
     Verify Purchase Completed
     Go To Cart
     Verify Added To Cart
+
+User Can Search For Product
+    [Documentation]  Searching for a game, verifying it shows up with Gherkin-syntax. LEAVING IT FOR LATER
+    [Tags]  Test 3 - ExtraUppgift 2
+    Go To Web Page
+    Search For Product  Game & Watch  Game & Watch
+
 
 
 
