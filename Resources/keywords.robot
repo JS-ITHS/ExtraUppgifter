@@ -58,5 +58,12 @@ Verify Jobba Hos Oss Loaded
     Page Should Contain  Jobba hos oss
 Mouse Over Kategorier
     Mouse Over  //*[@id="rise-header"]/div[1]/nav[2]/div[1]/ul/li[1]/a
+    Wait Until Page Contains  Spel & Gaming
+    Sleep  2s
+Go To Spel & Gaming
+    Click Link  link:Spel & Gaming
+    Click Link  link:Spel & Gaming
+    Wait Until Page Contains  Hitta allt inom spel och gaming hos oss!
+    Sleep  2s
 End Web Test
     Close Browser
