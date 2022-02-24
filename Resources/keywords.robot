@@ -56,6 +56,7 @@ Verify Jobba Hos Oss Loaded
     Sleep  2s
     Scroll To Bottom Page
     Page Should Contain  Jobba hos oss
-
+Mouse Over Kategorier
+    Mouse Over  //*[@id="rise-header"]/div[1]/nav[2]/div[1]/ul/li[1]/a
 End Web Test
     Close Browser

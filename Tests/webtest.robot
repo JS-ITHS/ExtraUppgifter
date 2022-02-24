@@ -54,6 +54,8 @@ User Can Navigate To Jobba Hos Oss
 User Can Sort By Letter In Category
     [Documentation]  Trying to choose a category, sort from a-ö and very A is first.
     [Tags]  Test 6 - ExtraUppgift 5
+    Go To Web Page
+    Mouse Over Kategorier
 
 
 
