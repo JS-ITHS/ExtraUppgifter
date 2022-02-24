@@ -38,5 +38,24 @@ Go To Cart
     Verify Search Completed  ${SEARCH_TERM}
 Verify Added To Cart
     Page Should Contain  Age of Empires IV (code-in-a-box)
+Go To Kampanjer
+    Click Element  //*[@id="rise-header"]/div[1]/nav[2]/div[1]/ul/li[3]/a/span
+    Verify Kampanjer Loaded
+Verify Kampanjer Loaded
+    Wait Until Page Contains   VÅRA AKTUELLA KAMPANJER
+Verify Våra Aktuella Kampanjer Is Visible
+    Page Should Contain  VÅRA AKTUELLA KAMPANJER
+Scroll To Bottom Page
+    Scroll Element Into View  //*[@id="page-footer"]/div[1]/div/div[5]/div/ul/li[4]
+Go To Jobba Hos Oss
+    Click Link  link:Jobba hos oss
+    Switch Window  NEW
+    Wait Until Page Contains  Jobba hos oss
+    Sleep  2s
+Verify Jobba Hos Oss Loaded
+    Sleep  2s
+    Scroll To Bottom Page
+    Page Should Contain  Jobba hos oss
+
 End Web Test
     Close Browser

@@ -30,11 +30,31 @@ User Can Add Object To Cart and Verify Product Added To Cart
     Go To Cart
     Verify Added To Cart
 
-User Can Search For Product
+ User Can Search For Product
     [Documentation]  Searching for a game, verifying it shows up with Gherkin-syntax. LEAVING IT FOR LATER
     [Tags]  Test 3 - ExtraUppgift 2
     Go To Web Page
     Search For Product  Game & Watch  Game & Watch
+
+User Can Navigate To Kampanjer
+    [Documentation]  Trying to navigate to kampanjer, verify that Våra Aktuella Kampanjer is visible.
+    [Tags]  Test 4 - ExtraUppgift 3
+    Go To Web Page
+    Go To Kampanjer
+    Verify Våra Aktuella Kampanjer Is Visible
+
+User Can Navigate To Jobba Hos Oss
+    [Documentation]  Trying to go to Jobba Hoss, scroll to the bottom of the page and verify that
+    [Tags]  Test 5 - ExtraUppgift 4
+    Go To Web Page
+    Scroll To Bottom Page
+    Go To Jobba Hos Oss
+    Verify Jobba Hos Oss Loaded
+
+User Can Sort By Letter In Category
+    [Documentation]  Trying to choose a category, sort from a-ö and very A is first.
+    [Tags]  Test 6 - ExtraUppgift 5
+
 
 
 
